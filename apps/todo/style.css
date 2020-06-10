@@ -1,0 +1,184 @@
+ @import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+
+body {
+    margin: auto 0;
+    font-family: 'Marmelad', sans-serif;
+    background-color: rgb(239,236,240);
+    /* font-size: 20px; */
+    height: 1vh;
+}
+
+.container {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px white solid;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,.1);
+    background-color: rgba(236,240,255,1);
+}
+
+.intro {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 4em;
+    color: #434C6B;
+    text-align: center;
+    margin: 15px;
+}
+
+.subline {
+    font-size: 2em;
+    text-align: center;
+    margin: 5px;
+    color: #96A9EE;
+}
+
+.lead {
+    padding: 10px;
+}
+
+.rules {
+    padding-left: 30px;
+    border: 1px solid white;
+}
+
+.indention {
+    padding-left: 30px;
+}
+.entry {
+    padding: 40px;
+}
+
+input {
+    line-height: 20px;
+    font-size: 18px;
+}
+
+.entry button {
+    margin-left: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+ul {
+    margin: 0;
+    padding: 20px;
+    width: 470px;
+    list-style-type: none;
+}
+
+li {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    /* justify-content: space-around; */
+    /* text-align: center; */
+}
+
+li:before {
+  content: "→";
+  padding-right: 10px;
+}
+
+li:hover {
+    background-color: white;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+li button {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.finish {
+    padding:40px;
+}
+
+button {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:transparent;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+button:hover {
+	background-color:transparent;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+button:disabled {
+    color:rgba(119,119,119,0.5);
+}
+
+li button {
+    margin-left: auto;
+}
+
+.footer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer p {
+    width:50%;
+}
+
+@media screen and (max-width: 660px) {
+    body {
+        width: 100%;
+        display: block;
+    }
+
+    .container {
+        box-shadow: none;
+    }
+
+    .rules {
+        padding: 15px;
+    }
+
+    ul {
+        width: 330px;
+    }
+
+    input {
+        width:100%;
+    }
+
+    .entry button {
+        width: 100%;
+        margin: 20px;
+        margin-left: auto;
+    }
+
+    li {
+        width:300px;
+    }
+}

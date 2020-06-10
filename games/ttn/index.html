@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Violent Neighbourhood a game by ThroughTheNews</title>
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <script src="TemplateData/UnityProgress.js"></script>
+  <script src="Build/UnityLoader.js"></script>
+  <script>
+    var unityInstance = UnityLoader.instantiate("unityContainer", "Build/EscapeTheViolence_Web_122.json", {
+      onProgress: UnityProgress
+    });
+  </script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m, e, t, r, i, k, a) {
+      m[i] = m[i] || function() {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(50394385, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/50394385" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+</head>
+
+<body style="margin-bottom:50px;">
+  <div class="webgl-content">
+    <p style="font-family:verdana;">The game is playable on PC only</p>
+    <div id="unityContainer" style="width: 1360px; height: 768px"></div>
+    <div class="footer">
+      <div class="webgl-logo"></div>
+      <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+      <div class="title">Violent Neighbourhood v 1.2.2</div>
+    </div>
+  </div>
+  <div align="center" style="margin:10px;padding:10px;">
+  <a style="font-family:montserrat; text-decoration: none; color: #212529; font-size: 30px;" href="https://www.throughthenews.com/?utm_source=game&utm_medium=github">ThroughTheNews</a>
+  </div>
+  <div align="center" style="position: fixed; height: 70px; background-color: grey; bottom: 0px; left: 0px; right: 0px; margin-bottom: 0px;">
+    <a href='https://play.google.com/store/apps/details?id=com.BlackDogRedNose.ViolentNeighbourhood&utm_source=github&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' style="width: 200px"/></a>
+  </div>
+</body>
+
+</html>

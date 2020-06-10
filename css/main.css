@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+.clearfix:after {
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #000000;
+}
+
+.container {
+    /* width: 100%; */
+    margin: 20px 30px 20px 30px;
+}
+
+.cover {
+    background-color: #080086;
+    border-style: solid;
+    border-width: thick;
+    border-color: #00ffff;
+}
+
+div.text-section>p {
+    margin-left: 10px;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 48px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #008281;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+h4 {
+    color: #feff00;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 22px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+h5 {
+    color: #ffffff;
+    font-family: 'Source Code Pro', monospace;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding-left: 20px;
+    margin: auto;
+}
+
+p,
+ul {
+    font-size: 18px;
+    font-family: 'Source Code Pro', monospace;
+    color: #ffffff;
+    margin-left: 5px;
+    list-style-type: square;
+}
+
+a {
+    color: #00ef00;
+}
+
+.tag {
+    background-color: #008281;
+    display: inline-block;
+    margin: 0px 0px 0px 20px;
+    padding: 0px 5px 0px 5px;
+    font-size: 12px;
+}
+
+.footer {
+    background: #008482;
+    padding: 20px;
+    text-align: right;
+}

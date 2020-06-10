@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+	<string id='StartTxt'>СТАРТ</string>
+	<string id='SettingsTxt'>НАСТРОЙКИ</string>
+	<string id='CreditsTxt'>РАЗРАБОТЧИКИ</string>
+	<string id='Controls'>Управление \nИгрок 1 — W/S\nИгрок 2 — ↑/↓</string>
+	<string id='MusicTxt'>МУЗЫКА</string>
+	<string id='MusicTxt2'>ВКЛ</string>
+	<string id='SoundTxt'>ЗВУК</string>
+	<string id='SoundTxt2'>ВКЛ</string>
+	<string id='DifficultyTxt'>СЛОЖНОСТЬ</string>
+	<string id='DifficultyTxt2'>НОРМАЛЬНО</string>
+	<string id='BackTxt'>НАЗАД</string>
+	<string id='Team'>Спасибо за то, что поиграл!\n\nРазработка — Сергей Манвелов\nАрт — Анастасия Манвелова\n\nСпасибо Counstruct 3 за такой классный инструмент!\n\nПодписывайтесь в Twitter @Kawaiier\nПодписывайтесь в Telegram @Singleplayered</string>
+	<string id='BackTxt2'>НАЗАД</string>
+	<string id='gameover'>КОНЕЦ РАУНДА\n\n\nПОБЕДИЛ</string>
+	<string id='restart'>нажми ENTER чтобы продолжить, SPACE чтобы перезапустить или ESC чтобы выйти</string>
+	<string id='StartingTxt'>Забей гол!</string>
+	<string id='StartingTxt2'>Забей своим небольшим!</string>
+	<string id='StartingTxt3'>Все под контролем!</string>
+	<string id='StartingTxt4'>(не) Забей!</string>
+	<string id='StartingTxt5'>Меееееедленно!</string>
+	<string id='StartingTxt6'>Будь мячом!</string>
+</strings>

@@ -1,0 +1,13 @@
+{
+"companyName": "Sergey Manvelov",
+"productName": "Neendga",
+"dataUrl": "Neendga.data.unityweb",
+"wasmCodeUrl": "Neendga.wasm.code.unityweb",
+"wasmFrameworkUrl": "Neendga.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Light",
+"backgroundColor": "#828080",
+"cacheControl": {"default": "must-revalidate"}
+}

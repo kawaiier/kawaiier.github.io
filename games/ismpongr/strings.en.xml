@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+	<string id='StartTxt'>START</string>
+	<string id='SettingsTxt'>SETTINGS</string>
+	<string id='CreditsTxt'>CREDITS</string>
+	<string id='Controls'>Controls \nPlayer 1 — W/S\nPlayer 2 — ↑/↓</string>
+	<string id='MusicTxt'>MUSIC</string>
+	<string id='MusicTxt2'>ON</string>
+	<string id='SoundTxt'>SOUND</string>
+	<string id='SoundTxt2'>ON</string>
+	<string id='DifficultyTxt'>DIFFICULTY</string>
+	<string id='DifficultyTxt2'>NORMAL</string>
+	<string id='BackTxt'>BACK</string>
+	<string id='Team'>Thanks for playing!\n\nDeveloped by Sergey Manvelov\nArt by Anastasia Manvelova\n\nHuge thanks to Counstruct 3 for making this possible!\n\nFollow me on Twitter @Kawaiier\nJoin my Telegram channel @Singleplayered</string>
+	<string id='BackTxt2'>BACK</string>
+	<string id='gameover'>ROUND OVER\n\n\nWINS</string>
+	<string id='restart'>press ENTER to continue, SPACE to restart or ESC to exit</string>
+	<string id='StartingTxt'>Score a goal!</string>
+	<string id='StartingTxt2'>Score while you're short!</string>
+	<string id='StartingTxt3'>Everything's under control!</string>
+	<string id='StartingTxt4'>(do not) Score a goal!</string>
+	<string id='StartingTxt5'>Sooooo slooow!</string>
+	<string id='StartingTxt6'>Know where the ball is!</string>
+</strings>
