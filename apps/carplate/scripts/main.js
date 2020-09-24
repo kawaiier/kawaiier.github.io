@@ -70,3 +70,7 @@ function resetForm(){
     }
     document.getElementById(1).focus();
 }
+
+function countPlate(){
+    console.log("Test");
+}

@@ -11,6 +11,11 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+h1 {
+    text-align: center;
+    margin: 80px 30px;
+}
+
 .plate {
     flex: auto;
     margin-top: 20%;
