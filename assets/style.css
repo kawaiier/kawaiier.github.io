@@ -53,32 +53,30 @@ p {
 
 h1, h2 {
     font-family: 'VT323', monospace;
-		letter-spacing: 4px;
 }
 
 
 h1 {
-    font-size: 7em;
+    font-size: 6.8em;
+		letter-spacing: 3px;
 }
 
 h2 {
     font-size: 5em;
-    margin-top: 2em;
+		margin: 1em 0 0.5em 0;
     text-transform: uppercase;
+		letter-spacing: 4px;
 }
 
-@media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 6em;
-  }
-	h2 {
-			font-size: 4em;
-	}
-}
 
 h3 {
-    font-size: 2em;
+		margin: 10px 0;
+		font-size: 2em;
     font-family: 'Source Code Pro', monospace;
+}
+
+.about-me p {
+		margin: 40px 0px;
 }
 
 .section {
@@ -89,9 +87,21 @@ h3 {
     justify-content: space-around;
 }
 
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 6em;
+  }
+	h2 {
+			font-size: 4em;
+	}
+	.section {
+			border: 0.2rem solid #00FFFF;
+	}
+}
 .project {
     flex: 0 1 350px;
-    margin: 5px;
+    margin: 15px 5px;
+		margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -104,6 +114,21 @@ h3 {
 }
 
 footer {
-		padding: 10em 0em 5em 0em;
-    text-align: right;
+		padding: 8em 0em 5em 0em;
+    text-align: center;
+}
+
+footer p{
+		font-size: 0.9em;
+}
+
+#cookies {
+		color: grey;
+		font-size: 0.9em;
+}
+
+#pgp {
+		color: grey;
+		font-size: 0.8em;
+		padding-top: 5em;
 }
