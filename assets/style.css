@@ -107,3 +107,9 @@ footer {
 		padding: 10em 0em 5em 0em;
     text-align: right;
 }
+
+#pgp {
+		color: grey;
+		font-size: 0.8em;
+		padding-top: 5em;
+}
