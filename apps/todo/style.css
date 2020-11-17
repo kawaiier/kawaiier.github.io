@@ -39,6 +39,7 @@ h1 {
 
 .lead {
     padding: 10px;
+    line-height: 1.5em;
 }
 
 .rules {
@@ -79,12 +80,13 @@ li {
     cursor: pointer;
     display: flex;
     justify-content: flex-start;
+    line-height: 1.5em;
     /* justify-content: space-around; */
     /* text-align: center; */
 }
 
 li:before {
-  content: "→";
+  content: "◽️";
   padding-right: 10px;
 }
 
@@ -153,11 +155,12 @@ li button {
 @media screen and (max-width: 660px) {
     body {
         width: 100%;
-        display: block;
+        /* display: block; */
     }
 
     .container {
         box-shadow: none;
+        margin: 5px;
     }
 
     .rules {
@@ -170,6 +173,10 @@ li button {
 
     input {
         width:100%;
+    }
+
+    .entry {
+        padding: 10px;
     }
 
     .entry button {
