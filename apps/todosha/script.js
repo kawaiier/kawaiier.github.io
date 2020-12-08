@@ -30,12 +30,12 @@ function addSymbolsLeft(){
     if (editable){
         let text = minLength - input.value.length;
         if (text > 0) {
-            p.textContent = `${text} symbols left to add a task`;
+            p.textContent = `Осталось ввести не менее ${text} символов`;
         } else {
-            p.textContent = `Good! You can add the task now`;
+            p.textContent = `Отлично, задачу можно добавлять`;
         }
     } else {
-        p.textContent = `Now let's get these things done`
+        p.textContent = `Теперь можно приступить к выполнению задач`
     };
 }
 
@@ -95,7 +95,7 @@ function toggleDone(id){
 }
 
 function listGotFull(){
-    alert("You can't create more than 5 tasks. Delete something");
+    alert("Создать больше пяти задач нельзя. Удали что-нибудь");
 }
 
 function finishList(){
@@ -113,7 +113,7 @@ function deactivateButtons(){
 }
 
 function deactivateInput(){
-    input.value = "Good work";
+    input.value = "Молодец";
     input.disabled = true;
 }
 
