@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funky Calc</title>
+
+    <style>
+        /* Body */
+        body {margin: 0; padding:0; text-align: center; font-family: 'Courier New', Courier, monospace;}
+        
+        /* Sections */
+        .section {padding: 5px; width: 300px; margin: auto; margin-top: 15px;}
+        
+        /* Buttons */
+        button {background-color: white; border: solid 2px black; font-size: large; margin-top: 5px; transition: .3s ease-in-out;}
+        button:hover {background-color: black; border: solid 2px white; color:white; cursor: pointer;}
+        
+        /* Input */
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance: textfield;
+        }
+
+        input {border-width: 0px 0px 1px 0px; width: 200px;}
+        input:focus {outline: none;}
+        input[type='number'] { font-size: 20px; font-family: 'Courier New', Courier, monospace; text-align: right;}
+
+        /* Text */
+        p {font-size: 22px;}
+
+        /* Links */
+        a {text-decoration: none;}
+        a:hover {border: dotted blue; border-width: 0px 0px .1px 0px;}
+
+        /* Footer */
+        footer {margin: 60px 30px;}
+      </style>
+
+</head>
+<body>
+    <h1>FUNKY CALC</h1>
+    <em>A Bit Funky Calculator</em>
+    <form>
+    <!-- <button type="reset">Clear</button> -->
+    <div class="section">
+        <h2>I'd like to add</h2>
+        <p>a: <input type="number" name="a" id="a"></p>
+        <p>b: <input type="number" name="b" id="b"></p>
+        <button onclick="add(document.getElementById('a').value,document.getElementById('b').value)">A + B</button>
+    </div>
+
+    <div class="section">
+        <h2>I'd like to subtract</h2>
+        <p>c: <input type="number" name="c" id="c"></p>
+        <p>d: <input type="number" name="d" id="d"></p>
+        <button onclick="subtract(document.getElementById('c').value,document.getElementById('d').value)">C - D</button>
+    </div>
+    
+
+    <div class="section">
+        <h2>I'd like to multiply</h2>
+        <p>e: <input type="number" name="e" id="e"></p>
+        <p>f: <input type="number" name="f" id="f"></p>
+        <button onclick="multiply(document.getElementById('e').value,document.getElementById('f').value)">E * F</button>    
+    </div>
+    
+
+    <div class="section">
+        <h2>I'd like to divide</h2>
+        <p>g: <input type="number" name="g" id="g"></p>
+        <p>h: <input type="number" name="h" id="h"></p>
+        <button onclick="divide(document.getElementById('g').value,document.getElementById('h').value)">G / H</button>
+    </div>
+    </form>
+    <footer>
+        <em>Made by <a href="https://github.com/kawaiier">Sergey Manvelov</a></em>
+    </footer>
+
+    <script>
+        function add(a, b) {
+            var sum = parseInt(a) + parseInt(b);
+            alert(sum);
+        }
+
+        function subtract(a, b) {
+            var sum = parseInt(a) - parseInt(b);
+            alert(sum);
+        }
+
+        function multiply(a, b) {
+            var sum = parseInt(a) * parseInt(b);
+            alert(sum);
+        }
+
+        function divide(a, b) {
+            var sum = parseInt(a) / parseInt(b);
+            alert(sum);
+        }
+    </script>
+
+
+</body>
+</html>
