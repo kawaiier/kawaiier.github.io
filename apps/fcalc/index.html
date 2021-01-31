@@ -36,6 +36,8 @@
         /* Text */
         p {font-size: 22px;}
 
+        .answer {font-size: 26px; font-weight: bold;}
+
         /* Links */
         a {text-decoration: none;}
         a:hover {border: dotted blue; border-width: 0px 0px .1px 0px;}
@@ -48,12 +50,15 @@
 <body>
     <h1>FUNKY CALC</h1>
     <em>A Bit Funky Calculator</em>
-    <form>
+    <!-- <form> -->
     <!-- <button type="reset">Clear</button> -->
+    <br><br>
+    <button onclick="reset()">RESET</button>
     <div class="section">
         <h2>I'd like to add</h2>
         <p>a: <input type="number" name="a" id="a"></p>
         <p>b: <input type="number" name="b" id="b"></p>
+        <p class='answer' id="ab"></p>
         <button onclick="add(document.getElementById('a').value,document.getElementById('b').value)">A + B</button>
     </div>
 
@@ -61,6 +66,7 @@
         <h2>I'd like to subtract</h2>
         <p>c: <input type="number" name="c" id="c"></p>
         <p>d: <input type="number" name="d" id="d"></p>
+        <p class='answer' id="cd"></p>
         <button onclick="subtract(document.getElementById('c').value,document.getElementById('d').value)">C - D</button>
     </div>
     
@@ -69,6 +75,7 @@
         <h2>I'd like to multiply</h2>
         <p>e: <input type="number" name="e" id="e"></p>
         <p>f: <input type="number" name="f" id="f"></p>
+        <p class='answer' id="ef"></p>
         <button onclick="multiply(document.getElementById('e').value,document.getElementById('f').value)">E * F</button>    
     </div>
     
@@ -77,32 +84,83 @@
         <h2>I'd like to divide</h2>
         <p>g: <input type="number" name="g" id="g"></p>
         <p>h: <input type="number" name="h" id="h"></p>
+        <p class='answer' id="gh"></p>
         <button onclick="divide(document.getElementById('g').value,document.getElementById('h').value)">G / H</button>
     </div>
-    </form>
+    <!-- </form> -->
     <footer>
         <em>Made by <a href="https://github.com/kawaiier">Sergey Manvelov</a></em>
     </footer>
 
     <script>
+        var answer1 = document.getElementById("ab");
+        var answer2 = document.getElementById("cd");
+        var answer3 = document.getElementById("ef");
+        var answer4 = document.getElementById("gh");
+        var result;
+        var error = "Enter a number"
+
+        function reset(){
+            document.getElementById("a").value = "";
+            document.getElementById("b").value = "";
+            document.getElementById("c").value = "";
+            document.getElementById("d").value = "";
+            document.getElementById("e").value = "";
+            document.getElementById("f").value = "";
+            document.getElementById("g").value = "";
+            document.getElementById("h").value = "";
+            document.getElementById("ab").innerHTML = "";
+            document.getElementById("cd").innerHTML = "";
+            document.getElementById("ef").innerHTML = "";
+            document.getElementById("gh").innerHTML = "";
+        }
+
         function add(a, b) {
-            var sum = parseInt(a) + parseInt(b);
-            alert(sum);
+            a = parseInt(a);
+            b = parseInt(b);
+            if (a && b) {
+                    result = a + b;
+                }
+            else {
+                result = error;
+            }
+            answer1.innerHTML = result;
         }
 
         function subtract(a, b) {
-            var sum = parseInt(a) - parseInt(b);
-            alert(sum);
+            a = parseInt(a);
+            b = parseInt(b);
+            if (a && b) {
+                    result = a - b;
+                }
+            else {
+                result = error;
+            }
+            answer2.innerHTML = result;
         }
 
         function multiply(a, b) {
-            var sum = parseInt(a) * parseInt(b);
-            alert(sum);
+            a = parseInt(a);
+            b = parseInt(b);
+            if (a && b) {
+                    result = a * b;
+                }
+            else {
+                result = error;
+            }
+            answer3.innerHTML = result;
         }
 
         function divide(a, b) {
-            var sum = parseInt(a) / parseInt(b);
-            alert(sum);
+            a = parseInt(a);
+            b = parseInt(b);
+            if (a && b) {
+                    result = a / b;
+                }
+            else {
+                result = error;
+            }
+            answer4.innerHTML = result;
         }
     </script>
 
