@@ -6,8 +6,7 @@
 Hi! My name is Sergey.  
 I'm Tbilisi based web and game developer.  
 I've been creating games since 2018 and webapps/webpages since late 2019.  
-I got skills in HTML, CSS, JavaScript, C# and Python.  
-Most of my web projects are in Russian but games are in English.   
+I got skills in **HTML5**, **CSS3** (Flexbox & Grid), **JavaScript** (React), **Git**, **C#** and **Python**.
 
 ## Apps
 Both apps are in Russian. _Translation in progress…_
