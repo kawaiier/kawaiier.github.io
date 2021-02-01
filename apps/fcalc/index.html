@@ -166,7 +166,7 @@
         function add(a, b) {
             a = parseInt(a);
             b = parseInt(b);
-            if (a && b) {
+            if ((a && b) || (a == 0 || b == 0)) {
                 result = a + b;
             }
             else {
@@ -178,7 +178,7 @@
         function subtract(a, b) {
             a = parseInt(a);
             b = parseInt(b);
-            if (a && b) {
+            if ((a && b) || (a == 0 || b == 0)) {
                 result = a - b;
             }
             else {
@@ -190,7 +190,7 @@
         function multiply(a, b) {
             a = parseInt(a);
             b = parseInt(b);
-            if (a && b) {
+            if ((a && b) || (a == 0 || b == 0)) {
                 result = a * b;
             }
             else {
@@ -202,7 +202,7 @@
         function divide(a, b) {
             a = parseInt(a);
             b = parseInt(b);
-            if (a && b) {
+            if ((a && b) || (a == 0 || b == 0)) {
                 result = a / b;
             }
             else {
