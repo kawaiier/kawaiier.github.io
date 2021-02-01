@@ -13,6 +13,7 @@ Most of my web projects are in Russian but games are in English.
 Both apps are in Russian. _Translation in progress…_
 * [ToDo-sha](https://kawaiier.github.io/apps/todo/) — A very simple yet effective to-do list where you can add no more than 5 items.
 * [Window Calculator](https://kawaiier.github.io/apps/calc/) — A calculator for you to count how many windows are lit in the house on the other side of the street.
+* [Funky Calculator](https://kawaiier.github.io/apps/fcalc/) — A bit funky calculator for those who know exactly what they need to calculate. And also for aesthetes. 
 
 ## Games
 * [Violent Neighbours](https://kawaiier.itch.io/violent-neighbours)  
