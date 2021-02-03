@@ -107,7 +107,7 @@ footer {
 }
 
 footer p{
-		font-size: 0.9em;
+		font-size: 16px;
 }
 
 #cookies {
@@ -117,7 +117,7 @@ footer p{
 
 #pgp {
 		color: grey;
-		font-size: 0.8em;
+		font-size: 14px;
 		padding-top: 5em;
 }
 
