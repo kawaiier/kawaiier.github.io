@@ -6,7 +6,7 @@
 Hi! My name is Sergey.  
 I'm Tbilisi based web and game developer.  
 I've been creating games since 2018 and webapps/webpages since late 2019.  
-I got skills in **HTML5**, **CSS3** (Flexbox & Grid), **JavaScript** (React), **Git**, **C#** and **Python**.
+I got skills in **HTML5**, **CSS3** (Flexbox & Grid), **JavaScript** (React & Redux), **Git**, **C#** and **Python**.
 
 ## Apps
 * [ToDo-sha](https://kawaiier.github.io/apps/todo/) — A very simple yet effective to-do list where you can add no more than 5 items.
