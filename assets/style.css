@@ -7,12 +7,6 @@ body {
     margin: 0 5% 0 5%;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    margin: 0 1% 0 1%;
-  }
-}
-
 .container {
     margin: 1em;
 }
@@ -87,17 +81,6 @@ h3 {
     justify-content: space-around;
 }
 
-@media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 6em;
-  }
-	h2 {
-			font-size: 4em;
-	}
-	.section {
-			border: 0.2rem solid #00FFFF;
-	}
-}
 .project {
     flex: 0 1 350px;
     margin: 15px 5px;
@@ -111,6 +94,11 @@ h3 {
     width: 100%;
 		margin: 0;
 		padding: 0;
+}
+
+.stack {
+  margin: 0px;
+  font-size: small;
 }
 
 footer {
@@ -131,4 +119,21 @@ footer p{
 		color: grey;
 		font-size: 0.8em;
 		padding-top: 5em;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0 1% 0 1%;
+  }
+
+  h1 {
+    font-size: 5em;
+  }
+	h2 {
+			font-size: 3.5em;
+	}
+	.section {
+			border: 0.2rem solid #00FFFF;
+      padding: 0px 5px;
+	}
 }
