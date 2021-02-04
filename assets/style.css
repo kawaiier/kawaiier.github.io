@@ -1,139 +1,153 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    background-color: black;
-    color: white;
-    margin: 0 5% 0 5%;
+  background: black;
+  color: white;
+  margin: 0 5%;
+  font-family: 'Source Code Pro', monospace;
 }
 
 .container {
-    margin: 1em;
+  margin: 10px;
+}
+
+header {
+  padding-top: 40vh;
 }
 
 a {
-    color: #00EE00;
+  color: #00EE00;
 }
 
 a:hover {
-    background-color: #00EE00;
-    color: #080086;
-    /* padding: 5px; */
+  background: #00EE00;
+  color: #080086;
+}
+
+.icons {
+  padding-top: 50px;
+  margin-left: -10px;
+}
+
+.icons a {
+  margin-left: 10px;
 }
 
 .icons img {
-    width: 40px;
-    padding-left: 10px;
+  width: 45px;
+  background-color: #00EE00;
+  padding: 10px;
 }
 
 strong {
-		color: #00FFFF;
-}
-
-img {
-    background-color: #00EE00;
-    padding: 4px;
-}
-
-a:hover img {
-    background-color: #00EE00;
-    color: #080086;
+  color: #00FFFF;
 }
 
 p {
-    font-size: 20px;
-    font-family: 'Source Code Pro', monospace;
+  font-size: 20px;
 }
 
 h1, h2 {
-    font-family: 'VT323', monospace;
+  font-family: 'VT323', monospace;
+  letter-spacing: 3px;
 }
 
-
 h1 {
-    font-size: 6.5em;
-		letter-spacing: 3px;
+  font-size: 100px;
 }
 
 h2 {
-    font-size: 5em;
-		margin: 1em 0 0.5em 0;
-    text-transform: uppercase;
-		letter-spacing: 4px;
+  font-size: 60px;
+  text-transform: uppercase;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
-
 
 h3 {
-		margin: 10px 0;
-		font-size: 2em;
-    font-family: 'Source Code Pro', monospace;
-}
-
-.about-me p {
-		margin: 40px 0px;
+  font-size: 35px;
+  padding-bottom: 25px;
 }
 
 .section {
-    background-color: #080086;
-    border: 5px solid #00FFFF;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  background: #080086;
+  border: 5px solid #00FFFF;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(230px, 400px))[4];
+      grid-template-columns: repeat(4, minmax(230px, 400px));
+  gap: 1rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .project {
-    flex: 0 1 350px;
-    margin: 15px 5px;
-		margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  margin: 15px 5px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .project img {
-    width: 100%;
-		margin: 0;
-		padding: 0;
+  width: 100%;
 }
 
 .project img + p {
-    margin: 0px;
-    font-size: small;
+  margin: 0px;
+  font-size: small;
+}
+
+.project :nth-child(4) {
+  padding: 25px 0px;
 }
 
 footer {
-		padding: 8em 0em 5em 0em;
-    text-align: center;
+  padding: 100px 0px 50px 0px;
+  text-align: center;
 }
 
-footer p{
-		font-size: 16px;
+footer p {
+  font-size: 16px;
 }
 
-#cookies {
-		color: grey;
-		font-size: 0.9em;
+#meta {
+  color: grey;
+  font-size: 14px;
 }
 
-#pgp {
-		color: grey;
-		font-size: 14px;
-		padding-top: 5em;
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-    margin: 0 1% 0 1%;
+@media (max-width: 1300px) {
+  .section {
+    -ms-grid-columns: (minmax(230px, 400px))[2];
+        grid-template-columns: repeat(2, minmax(230px, 400px));
   }
-
   h1 {
-    font-size: 5em;
+    font-size: 80px;
   }
-	h2 {
-			font-size: 3.5em;
-	}
-	.section {
-			border: 0.2rem solid #00FFFF;
-      padding: 0px 5px;
-	}
 }
+
+@media (max-width: 800px) {
+  .section {
+    -ms-grid-columns: (minmax(230px, 400px))[1];
+        grid-template-columns: repeat(1, minmax(230px, 400px));
+  }
+  header {
+    padding-top: 50vh;
+  }
+  body {
+    margin: 0px 5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

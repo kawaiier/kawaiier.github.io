@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+$colorGreen : #00EE00;
+$colorBlue : #080086;
+$colorAccent : #00FFFF;
+$fontStandard : 20px;
+$layout-breakpoint-medium: 1300px;
+$layout-breakpoint-small: 800px;
+$sectionPadding: 100px;
+$projectMin: 230px;
+$projectMax: 400px;
+$defaultPadding : 50px;
+$smallPadding : 25px;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+    color: white;
+    margin: 0 5%;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.container {
+    margin: 10px;
+}
+
+header {
+    padding-top: 40vh;
+}
+
+a {
+    color: $colorGreen;
+    &:hover {
+        background: $colorGreen;
+        color: $colorBlue
+    }
+}
+
+.icons {
+    padding-top: $defaultPadding;
+    margin-left: -10px;
+    
+    a {
+        margin-left: 10px;
+    }
+
+    img {
+        width: 45px;
+        background-color: $colorGreen;
+        padding: 10px;
+    }
+}
+
+strong {
+    color : $colorAccent;
+}
+
+p {
+    font-size: $fontStandard;
+}
+
+h1, h2 {
+    font-family: 'VT323', monospace;
+    letter-spacing: 3px;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 60px;
+    text-transform: uppercase;
+    padding-top: $sectionPadding;
+    padding-bottom: $defaultPadding;
+}
+
+h3 {
+    font-size: 35px;
+    padding-bottom: $smallPadding;
+}
+
+.section {
+    background: $colorBlue;
+    border: 5px solid $colorAccent;
+    display: grid;
+    grid-template-columns: repeat(4, minmax($projectMin, $projectMax));
+    gap: 1rem;    
+    // align-content: space-around;
+    justify-content: space-evenly;
+}
+
+.project {
+    margin: 15px 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    img {
+        width: 100%;
+        + p {
+            margin: 0px;
+            font-size: small;
+        }
+    }
+    :nth-child(4) {
+        padding: $smallPadding 0px;
+    }
+}
+
+footer {
+    padding: $sectionPadding 0px 50px 0px;
+    text-align: center;
+    p {
+        font-size: 16px;
+    }
+}
+
+#meta {
+    color: grey;
+    font-size: 14px;
+}
+
+@media (max-width: $layout-breakpoint-medium) {
+    .section {
+        grid-template-columns: repeat(2, minmax($projectMin, $projectMax));
+    }
+    h1 {
+        font-size: 80px;
+    }
+  }
+  
+  @media (max-width: $layout-breakpoint-small) {
+    .section {
+        grid-template-columns: repeat(1, minmax($projectMin, $projectMax));
+    }
+    
+    header {
+        padding-top: 50vh;
+    }
+
+    body {
+        margin: 0px 5px;
+    }
+  }
+  
