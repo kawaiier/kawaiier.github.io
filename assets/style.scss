@@ -18,6 +18,10 @@ $smallPadding : 25px;
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: black;
     color: white;
