@@ -124,6 +124,7 @@ footer {
 #meta {
     color: grey;
     font-size: 14px;
+    padding-top: $defaultPadding;
 }
 
 @media (max-width: $layout-breakpoint-medium) {
@@ -135,7 +136,7 @@ footer {
     }
   }
   
-  @media (max-width: $layout-breakpoint-small) {
+@media (max-width: $layout-breakpoint-small) {
     .section {
         grid-template-columns: repeat(1, minmax($projectMin, $projectMax));
     }
@@ -146,6 +147,14 @@ footer {
 
     body {
         margin: 0px 5px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+
+    #meta {
+        font-size: 11px;
     }
   }
   

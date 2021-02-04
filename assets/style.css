@@ -126,6 +126,7 @@ footer p {
 #meta {
   color: grey;
   font-size: 14px;
+  padding-top: 50px;
 }
 
 @media (max-width: 1300px) {
@@ -148,6 +149,12 @@ footer p {
   }
   body {
     margin: 0px 5px;
+  }
+  footer p {
+    font-size: 13px;
+  }
+  #meta {
+    font-size: 11px;
   }
 }
 /*# sourceMappingURL=style.css.map */
