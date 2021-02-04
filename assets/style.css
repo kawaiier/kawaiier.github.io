@@ -75,7 +75,7 @@ h3 {
 
 .section {
     background-color: #080086;
-    border: 0.5rem solid #00FFFF;
+    border: 5px solid #00FFFF;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -96,9 +96,9 @@ h3 {
 		padding: 0;
 }
 
-.stack {
-  margin: 0px;
-  font-size: small;
+.project img + p {
+    margin: 0px;
+    font-size: small;
 }
 
 footer {
