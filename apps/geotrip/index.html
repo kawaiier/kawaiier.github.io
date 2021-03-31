@@ -1,4 +1,4 @@
-<!DOCTYPE html> <html> <meta charset="utf-8"> <title>Perchance</title> <meta name="viewport" content="width=device-width, initial-scale=1"> <base href="https://perchance.org/" target="_parent"> <style> html{ font-family:sans-serif; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; } body{ margin:0;} article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary{ display:block;} audio, canvas, progress, video{ display:inline-block; vertical-align:baseline; } audio:not([controls]){ display:none;height:0;} [hidden], template{ display:none;} a{ background-color:transparent;} a:active, a:hover{ outline:0;} abbr[title]{ border-bottom:1px dotted;} b, strong{ font-weight:bold;} dfn{ font-style:italic;} h1{ font-size:2em;margin:0.67em 0;} mark{ background:#ff0;color:#000;} small{ font-size:80%;} sub, sup{ font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{ top:-0.5em;}sub{ bottom:-0.25em;} img{ border:0;} svg:not(:root){ overflow:hidden;} figure{ margin:1em 40px;} hr{ box-sizing:content-box;height:0;} pre{ overflow:auto;} code, kbd, pre, samp{ font-family:monospace, monospace;font-size:1em;} button, input, optgroup, select, textarea{ color:inherit; font:inherit; margin:0; } button{ overflow:visible;} button, select{ text-transform:none;} button, html input[type="button"], input[type="reset"], input[type="submit"]{ -webkit-appearance:button; cursor:pointer; } button[disabled], html input[disabled]{ cursor:default;} button::-moz-focus-inner, input::-moz-focus-inner{ border:0;padding:0;} input{ line-height:normal;} input[type="checkbox"], input[type="radio"]{ box-sizing:border-box; padding:0; } input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button{ height:auto;} input[type="search"]{ -webkit-appearance:textfield; box-sizing:content-box; } input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration{ -webkit-appearance:none;} fieldset{ border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;} legend{ border:0; padding:0; } textarea{ overflow:auto;} optgroup{ font-weight:bold;} table{ border-collapse:collapse;border-spacing:0;}td, th{ padding:0;}</style> <script>let __localToken = "LOCAL"; // downloader changes this to "LOCAL"
+<!DOCTYPE html> <html> <meta charset="utf-8"> <title>My Georgian Adventure</title> <meta name="viewport" content="width=device-width, initial-scale=1"> <base href="https://perchance.org/" target="_parent"> <meta name="referrer" content="no-referrer"> <style> html{ font-family:sans-serif; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; } body{ margin:0;} article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary{ display:block;} audio, canvas, progress, video{ display:inline-block; vertical-align:baseline; } audio:not([controls]){ display:none;height:0;} [hidden], template{ display:none;} a{ background-color:transparent;} a:active, a:hover{ outline:0;} abbr[title]{ border-bottom:1px dotted;} b, strong{ font-weight:bold;} dfn{ font-style:italic;} h1{ font-size:2em;margin:0.67em 0;} mark{ background:#ff0;color:#000;} small{ font-size:80%;} sub, sup{ font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{ top:-0.5em;}sub{ bottom:-0.25em;} img{ border:0;} svg:not(:root){ overflow:hidden;} figure{ margin:1em 40px;} hr{ box-sizing:content-box;height:0;} pre{ overflow:auto;} code, kbd, pre, samp{ font-family:monospace, monospace;font-size:1em;} button, input, optgroup, select, textarea{ color:inherit; font:inherit; margin:0; } button{ overflow:visible;} button, select{ text-transform:none;} button, html input[type="button"], input[type="reset"], input[type="submit"]{ -webkit-appearance:button; cursor:pointer; } button[disabled], html input[disabled]{ cursor:default;} button::-moz-focus-inner, input::-moz-focus-inner{ border:0;padding:0;} input{ line-height:normal;} input[type="checkbox"], input[type="radio"]{ box-sizing:border-box; padding:0; } input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button{ height:auto;} input[type="search"]{ -webkit-appearance:textfield; box-sizing:content-box; } input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration{ -webkit-appearance:none;} fieldset{ border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;} legend{ border:0; padding:0; } textarea{ overflow:auto;} optgroup{ font-weight:bold;} table{ border-collapse:collapse;border-spacing:0;}td, th{ padding:0;}</style> <script>let __localToken = "LOCAL"; // downloader changes this to "LOCAL"
   function __inIframe () {
     try {
         return window.self !== window.top;
@@ -875,27 +875,11 @@ let __negativeFormMethod = function() {
 //
 //   return false;
 //
-// }</script> <script>// Heads up: This code is extremely messy and hacked together. It really is quite
-// embarrassing, especially the Proxy stuff. A version 2 is definitely in order,
+// }</script> <script>// Heads up: This code is extremely messy and hacked together. Certain parts are
+// hilariously bad, especially the Proxy stuff. A version 2 is definitely in order,
 // but I probably won't have time to do that for quite a while. -Joe
 
 let NODE_ODDS_INDICATOR_CHARACTER = "^";
-
-// KNOWN BUG (not a huuuge deal, but slightly annoying):
-// If we've got:
-// abc
-//   a=10
-// Then [abc=abc.a] returns undefined instead of 10 (but [abc=abc.a, abc] works fine)
-// I think this has to do with the toString-ification of abc.a happening *after* the `set` handler has run?
-// Here's a minimal example that shows everything works as expected witha simple proxy setup:
-/*
-    var prox = new Proxy({a:10}, {
-     set(target, property, value) { target[property] = value*2; },
-        get(target, property) { return target[property]; },
-    });
-    console.log((prox = prox.a)+"");
-*/
-// So there's something mildly unusual going on there.
 
 window.__rootProxyHasHandler; // <-- gets set after rootProxy creation
 window.__rootProxyHasHandler_Greedy = function(target, prop) {
@@ -3002,17 +2986,25 @@ Object.defineProperty(Array.prototype, "selectUnique", {value: function(...args)
 let __arraySelectOneMethod = function() {
   //return this[Math.floor(Math.random()*this.length)];
   let candidates = []; /*{item, odds}*/
+  let i = 0;
   for(let a of this) {
     if(a.$nodeType) { // if it's a node
       candidates.push({item:a, odds:a.$odds});
     } else if(typeof a === 'string') {
       let details = __getTextOddsDetails(a);
+      if(details && (details.odds.includes("[") || details.odds.includes("{"))) details.odds = details.odds.evaluateItem; // don't need the if statement, but it's better for performance
       let odds = details ? Number(details.odds) : 1; // <-- this doesn't allow dynamic odds notation in arrays. Can always add it later if it turns out that it would be useful.
+      
+      if(odds < 0 || isNaN(odds)) {
+        __perchanceError(`The odds of ${a} has evaluated to ${odds < 0 ? "a negative number" : "a non-number"}. It's item number ${i} in the list (the list that starts with ${this[0]}). You may have created this list with selectAll or selectUnique.`);
+      }
+      
       let item = details ? details.textWithoutOdds : a;
       candidates.push({item, odds});
     } else {
       candidates.push({item:a, odds:1});
     }
+    i++;
   }
 
   if(this.$alreadyConsumedItems) {
@@ -3039,40 +3031,6 @@ let __arraySelectOneMethod = function() {
 };
 Object.defineProperty(Array.prototype, "selectOne", {get:__arraySelectOneMethod});
 
-Array.prototype.shuffleItems = function(numShuffles) {
-  // TODO: test random shuffle ()
-  if(numShuffles === undefined) {
-
-    var array = this;
-    var currentIndex = array.length, temporaryValue, randomIndex;
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-      // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-      // And swap it with the current element.
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-    return array;
-
-  } else {
-
-    let items = this;
-    for(let i = 0; i < numShuffles; i++) {
-      let i1 = Math.floor(items.length*Math.random());
-      let i2 = Math.floor(items.length*Math.random());
-      let c1 = items[i1];
-      let c2 = items[i2];
-      items[i1] = c2;
-      items[i2] = c1;
-    }
-    return items;
-
-  }
-
-};
 
 Object.defineProperty(Array.prototype, Symbol.toPrimitive, {value:function(hint) {
   return this.toString();
@@ -3675,6 +3633,11 @@ function __removeHtmlTagsFromBlocksArray(blocks) {
       container = selectorOrEl;
     }
 
+    if(container instanceof HTMLCollection) { // i.e. they have multiple elements with the same id and they referred to it using named access: https://html.spec.whatwg.org/multipage/window-object.html#named-access-on-the-window-object
+      __perchanceError(`It looks like you've got multiple elements in your HTML with <b>id=${container[0].id}</b>. If you can't find any duplicates, make sure that if you've imported some HTML, the ids used in that HTML aren't the same as the ids that you're using.`);
+      return;
+    }
+
     // goes through attributes and text nodes in the order they were declared. (order of execution is important)
     for(let n of ___templatedNodes) {
       // NOTE THAT `n` IS NOT AN ACTUAL `Node` object - it's just an obj we created with similarly names properties which "represents" the original node (which we delete and replace)
@@ -3921,8 +3884,14 @@ function __removeHtmlTagsFromBlocksArray(blocks) {
 
   window.addEventListener("DOMContentLoaded", function() {
     var h1 = window.document.querySelector("h1");
-    if(h1) document.title = (h1.innerText ? h1.innerText : h1.textContent)+" - Perchance"; // fall back to .textContent for e.g. JSDOM which doesn't support .innerText (relevant for using JSDOM to build a hacky API)
-    else document.title = window.location.pathname.slice(1).split("-").filter(function(a){return a;}).map(function(word){return word[0].toUpperCase()+word.slice(1); }).join(" ")+" - Perchance";
+    let title;
+    if(h1) {
+      title = h1.innerText ? h1.innerText : h1.textContent; // fall back to .textContent for e.g. JSDOM which doesn't support .innerText (relevant for using JSDOM to build a hacky API)
+    }  else {
+      title = window.location.pathname.slice(1).split("-").filter(function(a){return a;}).map(function(word){return word[0].toUpperCase()+word.slice(1); }).join(" ");
+    }
+    document.title = title+" ― Perchance" + (title.toLowerCase().includes("gener") ? "" : " Generator");
+    
   });</script> <style> .ldspmzjfhueifssge-ring{ display:inline-block;position:relative;width:64px;height:64px;}.ldspmzjfhueifssge-ring div{ box-sizing:border-box;display:block;position:absolute;width:51px;height:51px;margin:6px;border:6px solid #444;border-radius:50%;animation:lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;border-color:#444 transparent transparent transparent;}.ldspmzjfhueifssge-ring div:nth-child(1){ animation-delay:-0.45s;}.ldspmzjfhueifssge-ring div:nth-child(2){ animation-delay:-0.3s;}.ldspmzjfhueifssge-ring div:nth-child(3){ animation-delay:-0.15s;}@keyframes lds-ring{ 0%{ transform:rotate(0deg);}100%{ transform:rotate(360deg);}}</style> <div id="output-container"> </div> <script>// We need to make sure that when a user dynamically adds an element that has an inline event
   // handler (like onclick, for example) then we make sure they can directly reference their
   // top-level lists within those handlers:
@@ -4097,28 +4066,30 @@ function __removeHtmlTagsFromBlocksArray(blocks) {
       if(imports.length === 0) return;
       let cacheAge = await fetch(window.location.href, {method:"head"}).then(r => r.headers.get("age"));
       if(cacheAge === null) return;
-      console.log(`Cache is ${cacheAge} seconds old.`);
-      let cacheTime = Date.now() - Number(cacheAge)*1000;
+      console.log(`${window.location.href} cache is ${cacheAge} seconds old.`);
+      let cacheTime = Date.now() - Number(cacheAge)*1000; // this is UTC time, so it's okay to send to server
       let needToBustCache = await fetch(`https://perchance.org/api/clearCacheIfImportsHaveBeenUpdated?generatorName=${window.location.pathname.slice(1)}&importedGeneratorNames=${imports.join(",")}&cacheTime=${cacheTime}`).then(r => r.json());
       if(needToBustCache) {
         window.location.href = window.location.href.split("?")[0] + `?cacheBustDueToImportsHavingBeenEdited=${Math.random()}` + (window.location.href.split("?")[1] ? "&"+window.location.href.split("?")[1] : "");
       }
     }
-  })();</script> <!-- Yandex.Metrika counter -->
-	<script type="text/javascript">
-		(function (m, e, t, r, i, k, a) {
-			m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-			m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-		})
-			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  })();</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+  (function (m, e, t, r, i, k, a) {
+    m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+    m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+  })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-		ym(50394385, "init", {
-			clickmap: true,
-			trackLinks: true,
-			accurateTrackBounce: true
-		});
-	</script>
-	<noscript>
-	<div><img src="https://mc.yandex.ru/watch/50394385" style="position:absolute; left:-9999px;" alt="" /></div>
-	</noscript>
-	<!-- /Yandex.Metrika counter --></body> </html> 
+  ym(50394385, "init", {
+    clickmap: true,
+    trackLinks: true,
+    accurateTrackBounce: true
+  });
+</script>
+<noscript>
+<div><img src="https://mc.yandex.ru/watch/50394385" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->  
+</body> </html> 
