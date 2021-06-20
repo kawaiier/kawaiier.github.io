@@ -4,7 +4,7 @@
 
 ## About Me
 Hi! My name is Sergey.  
-I'm Tbilisi based web and game developer.  
+I'm Moscow based web and game developer.  
 I've been creating games since 2018 and webapps/webpages since late 2019.  
 I got skills in **HTML5**, **CSS3** (Flexbox & Grid), **JavaScript** (React & Redux), **Git**, **C#** and **Python**.
 
@@ -27,3 +27,4 @@ Test your basic math skills! Move sliders to answer simple questions.
 ## Contact Me
 [Facebook](https://www.facebook.com/Kawaiier)  
 [Telegram](https://t.me/kawaiier)
+Matrix (Element) → @kawaiier:matrix.org
