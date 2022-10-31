@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>SLM - Soccer Legend Manager</title>
+</head>
+<body onload="setup()">
+    <div class="container">
+        <div class="title">
+            <H1>Soccer Legend Manager</H1>
+        </div>
+        <div class="selection">
+            <h2>Select your team</h2>
+            <div class="select">
+
+                <select name="teamSelect" id="teamSelect" class="">
+                    <option value="Manchester United">Manchester United</option>
+                    <option value="Arsenal">Arsenal</option>
+                    <option value="Manchester City" disabled>Manchester City</option>
+                    <option value="Liverpool" selected>Liverpool</option>
+                </select>
+            </div>
+        </div>
+        <div class="selection">
+            <h2>Difficulty</h2>
+            <input type="range" min="0" max="3" value="0" class="slider" id="myRange" onchange="showSliderText()">
+            <p id="difficulty" class="">Choose difficulty</p>
+        </div>
+        <div class="playButtons selection">
+            <button type="button" class="btn1" onclick="play()">Play!</button>
+            <button type="button" class="btn2" onclick="reset()">Clear</button>
+        </div>
+        <div class="matchDay">
+            <p id="resultText" class=""></p>
+            <p id="stats" class="lead"></p>
+        </div>
+
+
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
