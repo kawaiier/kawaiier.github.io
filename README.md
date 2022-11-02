@@ -23,7 +23,7 @@ Deliver the box from one space base to another. Avoid angry aliens with laser gu
 On one day everybody on the planet decided to throw their presents in the air so that everyone will get present… Catch as many presents as you want!
 * [AweSOME Math](https://kawaiier.itch.io/awesome-math)  
 Test your basic math skills! Move sliders to answer simple questions.
-* [Soccer Legend Manager](https://kawaiier.github.io/games/slm/)
+* [Soccer Legend Manager](https://kawaiier.github.io/games/slm/)  
 Play soccer random soccer matches to better understand how coaching career works.
 
 ## Contact Me
