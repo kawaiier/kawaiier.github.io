@@ -4,9 +4,10 @@
 
 ## About Me
 Hi! My name is Sergey.  
-I'm Moscow based web and game developer.  
+I'm Tbilisi based web and game developer.  
 I've been creating games since 2018 and webapps/webpages since late 2019.  
-I got skills in **HTML5**, **CSS3** (Flexbox & Grid), **JavaScript** (React & Redux), **Git**, **C#** and **Python**.
+I got skills in **HTML5**, **CSS3** (Flexbox & Grid), **JavaScript** (React, Vue & Redux), **Git**, **C#** and **Python**.
+Open for freelace and full-time work.
 
 ## Apps
 * [ToDo-sha](https://kawaiier.github.io/apps/todo/) — A very simple yet effective to-do list where you can add no more than 5 items.
@@ -30,4 +31,3 @@ Play soccer random soccer matches to better understand how coaching career works
 [Facebook](https://www.facebook.com/Kawaiier)  
 [Telegram](https://t.me/kawaiier)
 
-Matrix (Element) → @kawaiier:matrix.org
