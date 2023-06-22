@@ -34,7 +34,7 @@ body {
 }
 
 header {
-    padding-top: 40vh;
+    padding-top: 20vh;
 }
 
 a {
@@ -68,7 +68,7 @@ p {
     font-size: $fontStandard;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'VT323', monospace;
     letter-spacing: 3px;
 }
@@ -89,17 +89,23 @@ h3 {
     padding-bottom: $smallPadding;
 }
 
+.about-me {
+    max-width: 640px;
+}
+
 .section {
     background: $colorBlue;
     border: 5px solid $colorAccent;
-    display: grid;
-    grid-template-columns: repeat(4, minmax($projectMin, $projectMax));
-    gap: 1rem;    
+    display: flex;
+    flex-wrap: wrap;
     // align-content: space-around;
     justify-content: space-evenly;
 }
 
 .project {
+    flex: 1 0 25%; /* grow: 1, shrink: 0, basis: 33.33% */
+    max-width: 345px;
+    min-width: 200px;
     margin: 15px 5px;
     padding: 10px;
     display: flex;
@@ -114,6 +120,19 @@ h3 {
     }
     :nth-child(4) {
         padding: $smallPadding 0px;
+    }
+}
+
+.source {
+    font-size: 16px;
+    a {
+        color: grey;
+    }
+
+    .disabled {
+        pointer-events: none;
+        cursor: default;
+        opacity: 0.6;
     }
 }
 
@@ -161,4 +180,3 @@ footer {
         font-size: 11px;
     }
   }
-  
