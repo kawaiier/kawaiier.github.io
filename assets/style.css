@@ -13,7 +13,7 @@ body {
   background: black;
   color: white;
   margin: 0 5%;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
 .container {
@@ -21,13 +21,12 @@ body {
 }
 
 header {
-  padding-top: 40vh;
+  padding-top: 20vh;
 }
 
 a {
   color: #00EE00;
 }
-
 a:hover {
   background: #00EE00;
   color: #080086;
@@ -37,11 +36,9 @@ a:hover {
   padding-top: 50px;
   margin-left: -10px;
 }
-
 .icons a {
   margin-left: 10px;
 }
-
 .icons img {
   width: 45px;
   background-color: #00EE00;
@@ -56,8 +53,8 @@ p {
   font-size: 20px;
 }
 
-h1, h2 {
-  font-family: 'VT323', monospace;
+h1, h2, h3 {
+  font-family: "VT323", monospace;
   letter-spacing: 3px;
 }
 
@@ -77,52 +74,55 @@ h3 {
   padding-bottom: 25px;
 }
 
+.about-me {
+  max-width: 640px;
+}
+
 .section {
   background: #080086;
   border: 5px solid #00FFFF;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(230px, 400px))[4];
-      grid-template-columns: repeat(4, minmax(230px, 400px));
-  gap: 1rem;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .project {
+  flex: 1 0 25%; /* grow: 1, shrink: 0, basis: 33.33% */
+  max-width: 345px;
+  min-width: 200px;
   margin: 15px 5px;
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 .project img {
   width: 100%;
 }
-
 .project img + p {
   margin: 0px;
   font-size: small;
 }
-
 .project :nth-child(4) {
   padding: 25px 0px;
+}
+
+.source {
+  font-size: 16px;
+}
+.source a {
+  color: grey;
+}
+.source .disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.6;
 }
 
 footer {
   padding: 100px 0px 50px 0px;
   text-align: center;
 }
-
 footer p {
   font-size: 16px;
 }
@@ -135,18 +135,15 @@ footer p {
 
 @media (max-width: 1300px) {
   .section {
-    -ms-grid-columns: (minmax(230px, 400px))[2];
-        grid-template-columns: repeat(2, minmax(230px, 400px));
+    grid-template-columns: repeat(2, minmax(230px, 400px));
   }
   h1 {
     font-size: 80px;
   }
 }
-
 @media (max-width: 800px) {
   .section {
-    -ms-grid-columns: (minmax(230px, 400px))[1];
-        grid-template-columns: repeat(1, minmax(230px, 400px));
+    grid-template-columns: repeat(1, minmax(230px, 400px));
   }
   header {
     padding-top: 50vh;
@@ -161,4 +158,5 @@ footer p {
     font-size: 11px;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
