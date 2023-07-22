@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --text-shadow : 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+* {
+    margin: 0;
+}
+body {
+    font-family: 'Kreon', serif;
+    background: url("img/background.png");
+    background-size: cover;
+}
+
+.container {
+    padding: 44px 82px;
+}
+
+
+h1 {
+    margin: 36px auto;
+    text-align: center;
+    font-size: 56px;
+    color: white;
+    padding-bottom: 36px;
+    border-bottom: 1px solid white;
+    text-shadow: var(--text-shadow);
+
+}
+
+
+h2 {
+    font-size: 44px;
+    color: white;
+    text-shadow: var(--text-shadow);
+}
+
+.players {
+    display: flex;
+    justify-content: space-around;
+}
+
+.choice {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.score {
+    font-size: 96px;
+    text-shadow: var(--text-shadow);
+    color: white;
+}
+
+.results {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 44px;
+    text-transform: uppercase;
+    text-shadow: var(--text-shadow);
+    color: white;
+    min-height: 300px;
+}
+
+footer {
+    padding: 25px 0;
+    width: 100%;
+}
+
+footer p {
+    margin-right: 32px;
+    text-align: right;
+    color: rgba(255, 229, 0, 0.30);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+footer a {
+    color: white;
+}
+
+@media (max-width: 1120px)  {
+    .container {
+        padding: 22px 20px;
+    }
+    h1 {
+        font-size: 38px;
+    }
+    h2 {
+        text-align: center;
+        font-size: 36px;
+    }
+    .player img {
+        width: 140px;
+    }
+    .choice {
+        flex-direction: column;
+    }
+    footer p {
+        text-align: center;
+        padding-bottom: 16px;
+    }
+}

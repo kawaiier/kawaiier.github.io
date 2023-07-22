@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Rock and Paper and Scissors</title>
+</head>
+<body>
+    <div class='container'>
+    <header>
+        <h1>Choice Combat: Ultimate Rock-Paper-Scissors</h1>
+    </header>
+    <main>
+        <section class="players">
+            <div class="player">
+                <h2>YOU</h2>
+                <div class="choice">
+                    <img src='assets/img/rockOff.svg' onclick="buttonClicked(this, 'rock')" class='rock'>
+                    <img src='assets/img/paperOff.svg' onclick="buttonClicked(this, 'paper')" class='paper'>
+                    <img src='assets/img/scissorOff.svg' onclick="buttonClicked(this, 'scissor')" class='scissor'>
+                </div>
+            </div>
+            <div class="player">
+                <h2>AI</h2>
+                <div class="choice">
+                    <img src='assets/img/rockOff.svg' id='ai-rock' class='rock'>
+                    <img src='assets/img/paperOff.svg' id='ai-paper' class='paper'>
+                    <img src='assets/img/scissorOff.svg' id='ai-scissor' class='scissor'>
+                </div>
+            </div>
+        </section>
+        <section class="results">
+            <div class="score">
+                <span id="score"></span>
+            </div>
+            <div id="result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>developed by <a href='https://kaxwaiier.github.io' target='_blank'>Kawaiier</a></p>
+    </footer>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
