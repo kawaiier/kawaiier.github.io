@@ -12,16 +12,21 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<link rel="icon" type="image/png" href="assets/favicon.ico">
 	<!-- <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png"> -->
-	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
 	<title>Sergey Manvelov - a digital guy</title>
 </head>
 
 <body>
+	<div id='menubar'>
+		<img src='assets/images/m-minimize.png'/>
+		<img src='assets/images/m-shrink.png'/>
+		<img src='assets/images/m-close.png'/>
+	</div>
 	<div class="container">
 		<header>
 			<h1>Sergey Manvelov</h1>
 			<nav>
-				<p><a href="#frontend">frontend</a> / <a href="#gamedev">gamedev</a></p>
+				<a href="#frontend">frontend</a> / <a href="#gamedev">gamedev</a>
 			</nav>
 		</header>
 		<main>
@@ -41,6 +46,128 @@
 				</div>
 			</section>
 			<section>
+				<div id="main">
+					<div>
+					<h2 id="frontend">Frontend</h2>
+					<ul id="nav">
+						<li data-content="content1">BlockSquare Exchange</li>
+						<li data-content="content2">5mdt Noise Generator</li>
+						<li data-content="content3">Choice Combat: Ultimate Rock-Paper-Scissors</li>
+						<li data-content="content4">ToDoSha</li>
+						<li data-content="content5">Window Calculator</li>
+						<li data-content="content6">Funky Calculator</li>
+						<li data-content="content7">Georgian PhotoWall</li>
+					</ul>
+					</div>
+					<div id="info">
+						<div id="content0" class="content">
+							<div class="project">
+								<h3>Choose any project</h3>
+								<p>Redesign of a website for crypto exchange.</p>
+							</div>
+						</div>
+						<div id="content1" class="content project" style="display: none;">
+								<h3>🇺🇸 BlockSquare Exchange</h3>
+								<div>
+									<img src="assets/images/screen-blocksquare.png" alt="BS screenshot">
+									<p><strong>SCSS / VueJS</strong></p>
+								</div>
+								<p>Redesign of a website for crypto exchange.</p>
+								<div>
+									<a href="https://www.blocksquare.exchange/en/" target="_blank">Check Out</a><br/>
+									<a href="#" class="source disabled">Close Sourced</a>
+								</div>
+						</div>
+						<div id="content2" class="content" style="display: none;">
+							<div class="project">
+								<h3>🇺🇸 5mdt Noise Generator</h3>
+								<div>
+									<img src="assets/images/screen-5mdt.png" alt="BS screenshot">
+									<p><strong>HTML / CSS</strong></p>
+								</div>
+								<p>The 5mdt Noise Generator is a web-based application that generates different types of noises locally, including brown, white, and pink noise. It allows users to play these noises and control their volume.</p>
+								<div>
+									<a href="https://5mdt.github.io/noise/" target="_blank">Check Out</a><br/>
+									<a href="https://github.com/5mdt/noise" class="source" target="_blank">Source code</a>
+								</div>
+							</div>
+						</div>
+						<div id="content3" class="content" style="display: none;">
+							<div class="project">
+								<h3>🇺🇸 Choice Combat: Ultimate Rock-Paper-Scissors</h3>
+								<div>
+									<img src="assets/images/screen-rpc.png" alt="BS screenshot">
+									<p><strong>HTML / CSS / JS</strong></p>
+								</div>
+								<p>Rock Paper, and Scissor</p>
+								<div>
+									<a href="https://kawaiier.github.io/games/rps" target="_blank">Check Out</a><br/>
+									<a href="https://github.com/kawaiier/kawaiier.github.io/tree/master/games/rps" class="source" target="_blank">Source code</a>
+								</div>
+							</div>
+						</div>
+						<div id="content4" class="content" style="display: none;">
+							<div class="project">
+								<h3>🇺🇸 ToDoSha</h3>
+								<div>
+									<img src="assets/images/screen-todosha.png" alt="Todosha screenshot">
+									<p><strong>HTML / CSS / JS</strong></p>
+								</div>
+								<p>A very simple yet effective to-do list where you can add no more than 5 items.</p>
+								<div>
+									<a href="https://kawaiier.github.io/apps/todo/">Check Out</a><br/>
+									<a href="https://github.com/kawaiier/kawaiier.github.io/tree/master/apps/todo" class="source" target="_blank">Source code</a>
+								</div>
+							</div>
+						</div>
+						<div id="content5" class="content" style="display: none;">
+							<div class="project">
+								<h3>🇷🇺 Window Calculator</h3>
+								<div>
+									<img src="assets/images/screen-window-calc.png" alt="Window Calculator screenshot">
+									<p><strong>HTML / CSS / JS</strong></p>
+								</div>
+								<p>A calculator for you to count how many windows are lit in the house on the other side of the
+							street.</p>
+								<div>
+									<a href="https://kawaiier.github.io/apps/calc/">Check Out</a><br/>
+									<a href="https://github.com/kawaiier/kawaiier.github.io/tree/master/apps/calc" class="source" target="_blank">Source code</a>
+								</div>
+							</div>
+						</div>
+						<div id="content6" class="content" style="display: none;">
+							<div class="project">
+								<h3>🇺🇸 Funky Calculator</h3>
+								<div>
+									<img src="assets/images/screen-fcalc.png" alt="Funky Calculator screenshot">
+									<p><strong>HTML / CSS / JS</strong></p>
+								</div>
+								<p>A bit funky calculator for those who know exactly what they need to calculate. And also for
+							aesthetes.</p>
+								<div>
+									<a href="https://kawaiier.github.io/apps/fcalc/">Check Out</a><br/>
+									<a href="https://github.com/kawaiier/kawaiier.github.io/blob/master/apps/fcalc/index.html" class="source" target="_blank">Source code</a>
+								</div>
+							</div>
+						</div>
+						<div id="content7" class="content" style="display: none;">
+							<div class="project">
+								<h3>🇺🇸 Georgian PhotoWall</h3>
+								<div>
+									<img src="assets/images/screen-geo-photo.png" alt="Georgian Photowall screenshot">
+									<p><strong>HTML / CSS / JS / React /API</strong></p>
+								</div>
+								<p>Here's to Georgia lovers. A photo wall of 50 Georgian photos from Pexels gallery.</p>
+								<div>
+									<a href="https://kawaiier.github.io/GeoPhotoWall/">Check Out</a><br/>
+									<a href="https://github.com/kawaiier/GeoPhotoWall" class="source" target="_blank">Source code</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+
+			<!--<section>
 				<h2 id="frontend">Frontend</h2>
 				<div class="section">
 					<div class="project">
@@ -50,6 +177,14 @@
 						<p>Redesign of a website for crypto exchange.</p>
 						<p><a href="https://www.blocksquare.exchange/en/" target="_blank">Check Out</a></p>
 						<p class="source"><a href="#" class='disabled'>Close Sourced</a></p>
+					</div>
+					<div class="project">
+						<h3>🇺🇸 5mdt Noise Generator</h3>
+						<img src="assets/images/5mdt-screen.png" alt="BS screenshot">
+						<p><strong>HTML / CSS</strong></p>
+						<p>The 5mdt Noise Generator is a web-based application that generates different types of noises locally, including brown, white, and pink noise. It allows users to play these noises and control their volume.</p>
+						<p><a href="https://5mdt.github.io/noise/" target="_blank">Check Out</a></p>
+						<p class="source"><a href="https://github.com/5mdt/noise" target="_blank">Source code</a></p>
 					</div>
 					<div class="project">
 						<h3>🇺🇸 ToDoSha</h3>
@@ -91,58 +226,86 @@
 						<p class="source"><a href="https://github.com/kawaiier/GeoPhotoWall" target="_blank">Source code</a></p>
 					</div>
 				</div>
-			</section>
-			<section>
-				<h2 id="gamedev">GameDev</h2>
-				<div class="section">
-					<div class="project">
-						<h3>🇺🇸 🇬🇪 Violent Neighbours</h3> 
-						<img src="assets/images/ttn-game.png"
-							alt="Violent Neighbours screenshot">
-						<p><strong>C# / Unity</strong></p>
-						<p>In this little game you can experience what LGBTQI individuals living in Tbilisi tackle in their
-							everyday life. Be careful! It’s homophobic neighborhood!</p>
-						<p><a href="https://kawaiier.itch.io/violent-neighbours" target="_blank">Play on itch.io</a></p>
-					</div>
-					<div class="project">
-						<h3>🇺🇸 Lunoki</h3> 
-						<img src="assets/images/lunoki-game.png" alt="Lunoki screenshot">
-						<p><strong>Construct 3</strong></p>
-						<p>Deliver the box from one space base to another. Avoid angry aliens with laser guns and
-							dangerously
-							looking spikes.</p>
-						<p><a href="https://kawaiier.itch.io/lunoki" target="_blank">Play on itch.io</a></p>
-					</div>
-					<div class="project">
-						<h3>🇺🇸 Present Day</h3> 
-						<img src="assets/images/present-game.png" alt="Present Day screenshot">
-						<p><strong>C# / Unity</strong></p>
-						<p>On one day everybody on the planet decided to throw their presents in the air so that everyone
-							will
-							get present… Catch as many presents as you want!</p>
-						<p><a href="https://kawaiier.itch.io/present-day" target="_blank">Play on itch.io</a></p>
-					</div>
-					<div class="project">
-						<h3>🇺🇸 AweSOME Math</h3> 
-						<img src="assets/images/math-game.png" alt="Awesome Math screenshot">
-						<p><strong>Lua / PICO-8</strong></p>
-						<p>Test your basic math skills like it's 80s! 
-							<br>Move sliders to answer simple questions.</p>
-						<p><a href="https://kawaiier.itch.io/awesome-math" target="_blank">Play on itch.io</a></p>
-					</div>
-				</div>
-			</section>
+			</section>-->
+			<!-- <section>
+				 <h2 id="gamedev">GameDev</h2>
+				 <div class="section">
+				 <div class="project">
+				 <h3>🇺🇸 🇬🇪 Violent Neighbours</h3>
+				 <img src="assets/images/ttn-game.png"
+				 alt="Violent Neighbours screenshot">
+				 <p><strong>C# / Unity</strong></p>
+				 <p>In this little game you can experience what LGBTQI individuals living in Tbilisi tackle in their
+				 everyday life. Be careful! It’s homophobic neighborhood!</p>
+				 <p><a href="https://kawaiier.itch.io/violent-neighbours" target="_blank">Play on itch.io</a></p>
+				 </div>
+				 <div class="project">
+				 <h3>🇺🇸 Lunoki</h3>
+				 <img src="assets/images/lunoki-game.png" alt="Lunoki screenshot">
+				 <p><strong>Construct 3</strong></p>
+				 <p>Deliver the box from one space base to another. Avoid angry aliens with laser guns and
+				 dangerously
+				 looking spikes.</p>
+				 <p><a href="https://kawaiier.itch.io/lunoki" target="_blank">Play on itch.io</a></p>
+				 </div>
+				 <div class="project">
+				 <h3>🇺🇸 Present Day</h3>
+				 <img src="assets/images/present-game.png" alt="Present Day screenshot">
+				 <p><strong>C# / Unity</strong></p>
+				 <p>On one day everybody on the planet decided to throw their presents in the air so that everyone
+				 will
+				 get present… Catch as many presents as you want!</p>
+				 <p><a href="https://kawaiier.itch.io/present-day" target="_blank">Play on itch.io</a></p>
+				 </div>
+				 <div class="project">
+				 <h3>🇺🇸 AweSOME Math</h3>
+				 <img src="assets/images/math-game.png" alt="Awesome Math screenshot">
+				 <p><strong>Lua / PICO-8</strong></p>
+				 <p>Test your basic math skills like it's 80s!
+				 <br>Move sliders to answer simple questions.</p>
+				 <p><a href="https://kawaiier.itch.io/awesome-math" target="_blank">Play on itch.io</a></p>
+				 </div>
+				 </div>
+				 </section> -->
 		</main>
+	</div>
 		<footer>
 			<p>made with ❤️ and <a href="https://github.com/hlissner/doom-emacs">Doom Emacs</a> in 🇬🇪
-			<br> 2023
+			<br/> 2023
 			</p>
-			<p id="meta">I use cookies to analyse site usage<br>PGP public key fingerprint: FE4A CDF7 F86A A0FB BDE5 7A44
-				CA73 4534 3C8E ABCD</p>
+			<p id="meta">I use cookies to analyse site usage<br><a href='assets/SergeiManvelov–Public.asc'>PGP public key</a> fingerprint: EAD4 5267 B6AC 16F4 E1CA D28F 2A8B 9CDF 02D3 A768</p>
 		</footer>
-	</div>
-						
-	<!-- Yandex.Metrika counter -->
+
+
+
+
+		<script>
+		 var navItems = document.querySelectorAll('#nav li');
+		 var contentItems = document.querySelectorAll('.content');
+
+		 navItems.forEach(function(item) {
+			 item.addEventListener('click', function() {
+				 // Remove the 'active' class from all list items
+				 navItems.forEach(function(i) {
+					 i.classList.remove('active');
+				 });
+
+				 // Add the 'active' class to the clicked list item
+				 this.classList.add('active');
+
+				 var contentId = this.getAttribute('data-content');
+				 contentItems.forEach(function(content) {
+					 if (content.id === contentId) {
+						 content.style.display = 'flex';
+					 } else {
+						 content.style.display = 'none';
+					 }
+				 });
+			 });
+		 });
+		</script>
+
+		<!-- Yandex.Metrika counter -->
 	<script type="text/javascript">
 		(function (m, e, t, r, i, k, a) {
 			m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
